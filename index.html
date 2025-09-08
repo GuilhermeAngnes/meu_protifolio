@@ -50,13 +50,13 @@
         }
         header#header .nav-icons {
           display: flex;
-          gap: 25px; /* Aumentei o espaçamento */
+          gap: 25px;
         }
         header#header .nav-icons a {
           color: #333;
           font-size: 1.3em;
           transition: color 0.3s;
-          position: relative; /* Essencial para o tooltip */
+          position: relative;
         }
         header#header .nav-icons a:hover {
           color: #0077b5;
@@ -66,7 +66,7 @@
         [data-tooltip]::after {
           content: attr(data-tooltip);
           position: absolute;
-          top: 130%; /* Posição abaixo do ícone */
+          top: 130%;
           left: 50%;
           transform: translateX(-50%);
           background-color: #333;
@@ -215,7 +215,7 @@
           border-radius: 50%;
           box-shadow: 0 2px 8px rgba(0,0,0,0.15);
           transition: color 0.3s, background-color 0.3s, transform 0.3s;
-          position: relative; /* Essencial para o tooltip */
+          position: relative;
         }
         .contact-footer a:hover {
           color: #fff;
@@ -343,9 +343,9 @@
 </section>
 
 <div class="contact-footer">
-	<a href="mailto:guilhermeangnes13@gmail.com" data-tooltip="E-mail"><i class="fa-solid fa-envelope"></i></a>
-	<a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank" data-tooltip="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-	<a href="https://www.instagram.com/gui_angnes/" target="_blank" data-tooltip="Instagram"><i class="fa-brands fa-instagram"></i></a>
+	<a href="mailto:guilhermeangnes13@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+	<a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+	<a href="https://www.instagram.com/gui_angnes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 </div>
 
 </body>
