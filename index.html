@@ -38,17 +38,33 @@
           color: #0077b5;
         }
 
-        /* Seções e layout */
+        /* Banner com imagem lateral */
+        #home {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 60px 20px;
+          max-width: 1000px;
+          margin: auto;
+          flex-wrap: wrap;
+        }
+        #home .banner-text {
+          flex: 1 1 500px;
+          padding-right: 20px;
+        }
+        #home .banner-image {
+          flex: 0 0 250px;
+          max-width: 250px;
+        }
+        #home .banner-image img {
+          width: 100%;
+          border-radius: 50%;
+        }
+
         section {
           padding: 60px 20px;
           max-width: 1000px;
           margin: auto;
-        }
-        #banner img {
-          max-width: 200px;
-          border-radius: 50%;
-          display: block;
-          margin: 20px auto;
         }
         h1, h2, h3 {
           color: #333;
@@ -84,6 +100,18 @@
             flex-direction: column;
             gap: 10px;
           }
+          #home {
+            flex-direction: column;
+            align-items: center;
+          }
+          #home .banner-text {
+            padding-right: 0;
+            text-align: center;
+          }
+          #home .banner-image {
+            max-width: 200px;
+            margin-top: 20px;
+          }
         }
 	</style>
 </head>
@@ -100,9 +128,13 @@
 
 <!-- Banner -->
 <section id="home">
-	<h1>Olá, bem-vindo ao meu portfólio de Análise de Dados</h1>
-	<p>Aqui você encontrará minhas experiências profissionais, habilidades, projetos e como entrar em contato comigo.</p>
-	<img src="images/img_prof.png" alt="Foto do Guilherme Angnes">
+	<div class="banner-text">
+		<h1>Olá, bem-vindo ao meu portfólio de Análise de Dados</h1>
+		<p>Aqui você encontrará minhas experiências profissionais, habilidades, projetos e como entrar em contato comigo.</p>
+	</div>
+	<div class="banner-image">
+		<img src="images/img_prof.png" alt="Foto do Guilherme Angnes">
+	</div>
 </section>
 
 <!-- Sobre Mim -->
