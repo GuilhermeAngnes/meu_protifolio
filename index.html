@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<title>Portfólio | Guilherme Angnes</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 	<style>
 		/* --- Estilos Gerais --- */
@@ -50,7 +50,7 @@
         }
         header#header .nav-icons {
           display: flex;
-          gap: 20px;
+          gap: 25px; /* Aumentei o espaçamento */
         }
         header#header .nav-icons a {
           color: #333;
@@ -62,11 +62,11 @@
           color: #0077b5;
         }
 
-        /* --- Estilos do Tooltip --- */
+        /* --- Estilos do Tooltip (Posição Inferior) --- */
         [data-tooltip]::after {
           content: attr(data-tooltip);
           position: absolute;
-          bottom: 125%; /* Posição acima do ícone */
+          top: 130%; /* Posição abaixo do ícone */
           left: 50%;
           transform: translateX(-50%);
           background-color: #333;
@@ -74,10 +74,12 @@
           padding: 5px 10px;
           border-radius: 5px;
           font-size: 0.8em;
+          font-weight: 500;
           white-space: nowrap;
           opacity: 0;
           visibility: hidden;
           transition: opacity 0.3s, visibility 0.3s;
+          z-index: 1001;
         }
         [data-tooltip]:hover::after {
           opacity: 1;
@@ -103,7 +105,7 @@
         #home .banner-image img {
           width: 100%;
           max-width: 200px;
-          border-radius: 50%; /* Borda arredondada para um visual mais moderno */
+          border-radius: 50%;
           box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
@@ -233,10 +235,10 @@
             text-align: center;
           }
           .banner-text {
-            order: 2; /* Texto fica abaixo da imagem */
+            order: 2;
           }
           .banner-image {
-            order: 1; /* Imagem fica acima do texto */
+            order: 1;
           }
         }
 	</style>
@@ -246,9 +248,9 @@
 <header id="header">
 	<a href="#home" class="logo">Guilherme Angnes - Analista de Dados</a>
 	<div class="nav-icons">
-		<a href="#sobre" data-tooltip="Sobre Mim"><i class="fas fa-user"></i></a>
-		<a href="#habilidades" data-tooltip="Habilidades"><i class="fas fa-cogs"></i></a>
-		<a href="#projetos" data-tooltip="Projetos"><i class="fas fa-project-diagram"></i></a>
+		<a href="#sobre" data-tooltip="Sobre Mim"><i class="fa-solid fa-user-tie"></i></a>
+		<a href="#habilidades" data-tooltip="Habilidades"><i class="fa-solid fa-code"></i></a>
+		<a href="#projetos" data-tooltip="Projetos"><i class="fa-solid fa-folder-open"></i></a>
 	</div>
 </header>
 
@@ -337,14 +339,13 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </section>
 
 <div class="contact-footer">
-	<a href="mailto:guilhermeangnes13@gmail.com" data-tooltip="E-mail"><i class="fas fa-envelope"></i></a>
-	<a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
-	<a href="https://www.instagram.com/gui_angnes/" target="_blank" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+	<a href="mailto:guilhermeangnes13@gmail.com" data-tooltip="E-mail"><i class="fa-solid fa-envelope"></i></a>
+	<a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank" data-tooltip="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+	<a href="https://www.instagram.com/gui_angnes/" target="_blank" data-tooltip="Instagram"><i class="fa-brands fa-instagram"></i></a>
 </div>
 
 </body>
