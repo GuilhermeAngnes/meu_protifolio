@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<title>Meu Portfólio</title>
+	<title>Portfólio | Guilherme Angnes</title>
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<style>
-		/* Melhorias na navegação */
-        header #header {
+		/* Navegação superior fixa */
+        header#header {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -17,138 +17,141 @@
           position: sticky;
           top: 0;
           z-index: 1000;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        header #header .logo {
+        header#header .logo {
           font-weight: bold;
           font-size: 1.2em;
           text-decoration: none;
           color: #333;
         }
-        header #header .icons {
+        header#header .nav-icons {
           display: flex;
           gap: 15px;
         }
-        header #header .icons li {
-          list-style: none;
-        }
-        header #header .icons a {
+        header#header .nav-icons a {
           color: #333;
           font-size: 1.2em;
           transition: color 0.3s;
         }
-        header #header .icons a:hover {
-          color: #0077b5; /* destaque ao passar mouse */
+        header#header .nav-icons a:hover {
+          color: #0077b5;
         }
-        /* Pequenas melhorias de responsividade */
-        @media screen and (max-width: 768px) {
-          header #header {
+        /* Seções e layout */
+        section {
+          padding: 60px 20px;
+          max-width: 1000px;
+          margin: auto;
+        }
+        #banner img {
+          max-width: 200px;
+          border-radius: 50%;
+          display: block;
+          margin: 20px auto;
+        }
+        h1, h2, h3 {
+          color: #333;
+        }
+        .features article {
+          margin-bottom: 30px;
+        }
+        .features article ul {
+          padding-left: 20px;
+        }
+        /* Contato */
+        ul.contact li {
+          margin-bottom: 10px;
+          list-style: none;
+        }
+        @media screen and (max-width:768px){
+          header#header {
             flex-direction: column;
             gap: 10px;
           }
         }
 	</style>
 </head>
-<body class="is-preload">
-<div id="wrapper">
-	<div id="main">
-		<div class="inner">
-			<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo"><strong>Portfólio de Projetos</strong> de Análise de Dados</a>
-				<ul class="icons">
-					<li><a href="https://www.instagram.com/gui_angnes/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-				</ul>
-			</header>
-
-			<!-- Banner -->
-			<section id="banner">
-				<div class="content">
-					<header>
-						<h1>Olá, seja bem-vindo(a) ao meu portfólio de Análise de Dados.</h1>
-					</header>
-					<p>Nessa página, você encontrará minhas experiências, habilidades e projetos em análise de dados, assim como meus contatos.</p>
-				</div>
-				<span class="image object">
-            <img src="images/img_prof.png" alt="Foto do Guilherme Angnes" />
-          </span>
-			</section>
-
-			<!-- Sobre Mim -->
-			<section>
-				<header class="main">
-					<h1>Sobre Mim</h1>
-				</header>
-				<h2>Meu nome é Guilherme Jacó Angnes</h2>
-				<p>Sou formando em Análise e Desenvolvimento de Sistemas e atuo como Analista de Dados.</p>
-				<p>Atualmente trabalho em uma empresa de software odontológico, realizando extração, manipulação e criação de visões dos dados para apoiar a tomada de decisão.</p>
-			</section>
-
-			<!-- Habilidades -->
-			<section>
-				<header class="major">
-					<h2>Habilidades</h2>
-				</header>
-				<div class="features">
-					<article>
-						<span class="icon fa-gem"></span>
-						<div class="content">
-							<h3>Linguagens de Programação e Banco de Dados</h3>
-							<ul>
-								<li>SQL</li>
-								<li>Python</li>
-								<li>Shell Script</li>
-							</ul>
-						</div>
-					</article>
-					<article>
-						<span class="icon solid fa-paper-plane"></span>
-						<div class="content">
-							<h3>Estatística e Machine Learning</h3>
-							<ul>
-								<li>Métricas de Negócio</li>
-							</ul>
-						</div>
-					</article>
-					<article>
-						<span class="icon solid fa-rocket"></span>
-						<div class="content">
-							<h3>Visualização de Dados</h3>
-							<ul>
-								<li>Power BI, Metabase, QuickSight</li>
-								<li>Git, GitHub, GitLab</li>
-								<li>Google Sheets</li>
-							</ul>
-						</div>
-					</article>
-					<article>
-						<span class="icon solid fa-rocket"></span>
-						<div class="content">
-							<h3>Engenharia de Software</h3>
-							<ul>
-								<li>PostgreSQL</li>
-								<li>SQLite</li>
-								<li>MySQL</li>
-								<li>SQL Server</li>
-							</ul>
-						</div>
-					</article>
-				</div>
-			</section>
-
-			<!-- Contato -->
-			<section>
-				<header class="major">
-					<h2>Contato</h2>
-				</header>
-				<p>Entre em contato através dos links abaixo:</p>
-				<ul class="contact">
-					<li class="icon solid fa-envelope"><a href="mailto:guilhermeangnes13@gmail.com">guilhermeangnes13@gmail.com</a></li>
-					<li class="icon solid fa-link"><a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/">LinkedIn</a></li>
-				</ul>
-			</section>
-		</div>
+<body>
+<!-- Header -->
+<header id="header">
+	<a href="#home" class="logo">Guilherme Angnes - Analista de Dados</a>
+	<div class="nav-icons">
+		<a href="#sobre"><i class="fas fa-user"></i></a>
+		<a href="#habilidades"><i class="fas fa-cogs"></i></a>
+		<a href="#projetos"><i class="fas fa-project-diagram"></i></a>
+		<a href="#contato"><i class="fas fa-envelope"></i></a>
+		<a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+		<a href="https://www.instagram.com/gui_angnes/" target="_blank"><i class="fab fa-instagram"></i></a>
 	</div>
-</div>
+</header>
+
+<!-- Banner -->
+<section id="home">
+	<h1>Olá, bem-vindo ao meu portfólio de Análise de Dados</h1>
+	<p>Aqui você encontrará minhas experiências profissionais, habilidades, projetos e como entrar em contato comigo.</p>
+	<img src="images/img_prof.png" alt="Foto do Guilherme Angnes">
+</section>
+
+<!-- Sobre Mim -->
+<section id="sobre">
+	<h2>Sobre Mim</h2>
+	<p>Meu nome é Guilherme Jacó Angnes, formado em Análise e Desenvolvimento de Sistemas e atuo como Analista de Dados.</p>
+	<p>Atualmente trabalho em uma empresa de software odontológico, realizando extração, manipulação e criação de visões de dados para apoiar a tomada de decisão.</p>
+</section>
+
+<!-- Habilidades -->
+<section id="habilidades">
+	<h2>Habilidades</h2>
+	<div class="features">
+		<article>
+			<h3>Linguagens e Bancos de Dados</h3>
+			<ul>
+				<li>SQL</li>
+				<li>Python</li>
+				<li>Shell Script</li>
+			</ul>
+		</article>
+		<article>
+			<h3>Estatística e Machine Learning</h3>
+			<ul>
+				<li>Métricas de Negócio</li>
+			</ul>
+		</article>
+		<article>
+			<h3>Visualização de Dados</h3>
+			<ul>
+				<li>Power BI, Metabase, QuickSight</li>
+				<li>Git, GitHub, GitLab</li>
+				<li>Google Sheets</li>
+			</ul>
+		</article>
+		<article>
+			<h3>Engenharia de Software</h3>
+			<ul>
+				<li>PostgreSQL</li>
+				<li>SQLite</li>
+				<li>MySQL</li>
+				<li>SQL Server</li>
+			</ul>
+		</article>
+	</div>
+</section>
+
+<!-- Projetos -->
+<section id="projetos">
+	<h2>Projetos</h2>
+	<p>Seus projetos podem ser listados aqui em cards com imagens, descrição, tecnologias utilizadas e resultados.</p>
+</section>
+
+<!-- Contato -->
+<section id="contato">
+	<h2>Contato</h2>
+	<p>Entre em contato através dos links abaixo:</p>
+	<ul class="contact">
+		<li><a href="mailto:guilhermeangnes13@gmail.com"><i class="fas fa-envelope"></i> guilhermeangnes13@gmail.com</a></li>
+		<li><a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+		<li><a href="https://www.instagram.com/gui_angnes/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+	</ul>
+</section>
 </body>
 </html>
