@@ -1,3 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>Portfólio | Guilherme Angnes</title>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<style>
+		/* Navegação superior fixa */
+        header#header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          background-color: #f5f5f5;
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header#header .logo {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-decoration: none;
+          color: #333;
+        }
+        header#header .nav-icons {
+          display: flex;
+          gap: 15px;
+        }
+        header#header .nav-icons a {
+          color: #333;
+          font-size: 1.2em;
+          transition: color 0.3s;
+        }
+        header#header .nav-icons a:hover {
+          color: #0077b5;
+        }
+
+        /* Banner com imagem lateral */
+        #home {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 60px 20px;
+          max-width: 1000px;
+          margin: auto;
+          flex-wrap: wrap;
+        }
+        #home .banner-text {
+          flex: 1 1 500px;
+          padding-right: 20px;
+        }
+        #home .banner-image {
+          flex: 0 0 250px;
+          max-width: 250px;
+        }
+        #home .banner-image img {
+          width: 100%;
+          border-radius: 50%;
+        }
+
+        section {
+          padding: 60px 20px;
+          max-width: 1000px;
+          margin: auto;
+        }
+        h1, h2, h3 {
+          color: #333;
+        }
+        .features article {
+          margin-bottom: 30px;
+        }
+        .features article ul {
+          padding-left: 20px;
+        }
+
+        /* Contato final */
+        .contact-footer {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          z-index: 1000;
+        }
+        .contact-footer a {
+          color: #333;
+          font-size: 1.5em;
+          transition: color 0.3s;
+        }
+        .contact-footer a:hover {
+          color: #0077b5;
+        }
+
+        @media screen and (max-width:768px){
+          header#header {
+            flex-direction: column;
+            gap: 10px;
+          }
+          #home {
+            flex-direction: column;
+            align-items: center;
+          }
+          #home .banner-text {
+            padding-right: 0;
+            text-align: center;
+          }
+          #home .banner-image {
+            max-width: 200px;
+            margin-top: 20px;
+          }
+        }
+	</style>
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+	<a href="#home" class="logo">Guilherme Angnes - Analista de Dados</a>
+	<div class="nav-icons">
+		<a href="#sobre"><i class="fas fa-user"></i></a>
+		<a href="#habilidades"><i class="fas fa-cogs"></i></a>
+		<a href="#projetos"><i class="fas fa-project-diagram"></i></a>
+	</div>
+</header>
+
+<!-- Banner -->
+<section id="home">
+	<div class="banner-text">
+		<h1>Olá, bem-vindo ao meu portfólio de Análise de Dados</h1>
+		<p>Aqui você encontrará minhas experiências profissionais, habilidades, projetos e como entrar em contato comigo.</p>
+	</div>
+	<div class="banner-image">
+		<img src="images/img_prof.png" alt="Foto do Guilherme Angnes">
+	</div>
+</section>
+
+<!-- Sobre Mim -->
+<section id="sobre">
+	<h2>Sobre Mim</h2>
+	<p>Meu nome é Guilherme Jacó Angnes, formado em Análise e Desenvolvimento de Sistemas e atuo como Analista de Dados.</p>
+	<p>Atualmente trabalho em uma empresa de software odontológico, realizando extração, manipulação e criação de visões de dados para apoiar a tomada de decisão.</p>
+</section>
+
+<!-- Habilidades -->
+<!--<section id="habilidades">
+	<h2>Habilidades</h2>
+	<div class="features">
+		<article>
+			<h3>Linguagens e Bancos de Dados</h3>
+			<ul>
+				<li>SQL</li>
+				<li>Python</li>
+				<li>Shell Script</li>
+			</ul>
+		</article>
+		<article>
+			<h3>Estatística e Machine Learning</h3>
+			<ul>
+				<li>Métricas de Negócio</li>
+			</ul>
+		</article>
+		<article>
+			<h3>Visualização de Dados</h3>
+			<ul>
+				<li>Power BI, Metabase, QuickSight</li>
+				<li>Git, GitHub, GitLab</li>
+				<li>Google Sheets</li>
+			</ul>
+		</article>
+		<article>
+			<h3>Engenharia de Software</h3>
+			<ul>
+				<li>PostgreSQL</li>
+				<li>SQLite</li>
+				<li>MySQL</li>
+				<li>SQL Server</li>
+			</ul>
+		</article>
+	</div>
+</section>-->
+<!-- Habilidades 02 -->
 <section id="habilidades">
 	<h2>Habilidades</h2>
 	<div class="skills-grid">
@@ -61,3 +245,19 @@
       margin-bottom: 5px;
     }
 </style>
+
+
+<!-- Projetos -->
+<section id="projetos">
+	<h2>Projetos</h2>
+	<p>Seus projetos podem ser listados aqui em cards com imagens, descrição, tecnologias utilizadas e resultados.</p>
+</section>
+
+<!-- Contato Footer -->
+<div class="contact-footer">
+	<a href="mailto:guilhermeangnes13@gmail.com"><i class="fas fa-envelope"></i></a>
+	<a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+	<a href="https://www.instagram.com/gui_angnes/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+</body>
+</html>
