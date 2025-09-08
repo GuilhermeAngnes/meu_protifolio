@@ -37,6 +37,7 @@
         header#header .nav-icons a:hover {
           color: #0077b5;
         }
+
         /* Seções e layout */
         section {
           padding: 60px 20px;
@@ -58,11 +59,26 @@
         .features article ul {
           padding-left: 20px;
         }
-        /* Contato */
-        ul.contact li {
-          margin-bottom: 10px;
-          list-style: none;
+
+        /* Contato final */
+        .contact-footer {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          z-index: 1000;
         }
+        .contact-footer a {
+          color: #333;
+          font-size: 1.5em;
+          transition: color 0.3s;
+        }
+        .contact-footer a:hover {
+          color: #0077b5;
+        }
+
         @media screen and (max-width:768px){
           header#header {
             flex-direction: column;
@@ -79,9 +95,6 @@
 		<a href="#sobre"><i class="fas fa-user"></i></a>
 		<a href="#habilidades"><i class="fas fa-cogs"></i></a>
 		<a href="#projetos"><i class="fas fa-project-diagram"></i></a>
-		<a href="#contato"><i class="fas fa-envelope"></i></a>
-		<a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
-		<a href="https://www.instagram.com/gui_angnes/" target="_blank"><i class="fab fa-instagram"></i></a>
 	</div>
 </header>
 
@@ -143,15 +156,11 @@
 	<p>Seus projetos podem ser listados aqui em cards com imagens, descrição, tecnologias utilizadas e resultados.</p>
 </section>
 
-<!-- Contato -->
-<section id="contato">
-	<h2>Contato</h2>
-	<p>Entre em contato através dos links abaixo:</p>
-	<ul class="contact">
-		<li><a href="mailto:guilhermeangnes13@gmail.com"><i class="fas fa-envelope"></i> guilhermeangnes13@gmail.com</a></li>
-		<li><a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-		<li><a href="https://www.instagram.com/gui_angnes/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-	</ul>
-</section>
+<!-- Contato Footer -->
+<div class="contact-footer">
+	<a href="mailto:guilhermeangnes13@gmail.com"><i class="fas fa-envelope"></i></a>
+	<a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+	<a href="https://www.instagram.com/gui_angnes/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
 </body>
 </html>
