@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
 <html lang="pt-BR" style="scroll-behavior: smooth;">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<title>Portfólio | Guilherme Angnes</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-	<style>
-		/* --- Estilos Gerais --- */
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Portfólio | Guilherme Angnes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* --- Estilos Gerais --- */
         body {
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -30,7 +29,6 @@
           text-decoration: none;
           color: #0077b5;
         }
-
         /* --- Navegação Superior Fixa --- */
         header#header {
           display: flex;
@@ -61,7 +59,6 @@
         header#header .nav-icons a:hover {
           color: #0077b5;
         }
-
         /* --- Estilos do Tooltip (Posição Inferior) --- */
         [data-tooltip]::after {
           content: attr(data-tooltip);
@@ -85,7 +82,6 @@
           opacity: 1;
           visibility: visible;
         }
-
         /* --- Banner Principal --- */
         #home {
           display: flex;
@@ -108,7 +104,6 @@
           border-radius: 3%;
           box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
-
         /* --- Seção de Habilidades --- */
         .skills-grid {
           display: grid;
@@ -150,7 +145,6 @@
           left: 0;
           font-weight: bold;
         }
-
         /* --- Seção de Projetos --- */
         .projects-grid {
           display: grid;
@@ -171,8 +165,12 @@
         }
         .project-card img {
           width: 100%;
-          height: 200px;
-          object-fit: cover;
+          height: 180px;
+          object-fit: contain;
+          object-position: center;
+          background-color: #f8f9fa;
+          padding: 10px;
+          box-sizing: border-box;
         }
         .project-card-content {
           padding: 20px;
@@ -192,7 +190,6 @@
           font-size: 0.8em;
           margin: 2px;
         }
-
         /* --- Contato Flutuante --- */
         .contact-footer {
           position: fixed;
@@ -222,7 +219,6 @@
           background-color: #0077b5;
           transform: scale(1.1);
         }
-
         /* --- Responsividade para Telas Menores --- */
         @media screen and (max-width: 768px) {
           header#header {
@@ -241,101 +237,94 @@
             order: 1;
           }
         }
-	</style>
+    </style>
 </head>
 <body>
-
 <header id="header">
-	<a href="#home" class="logo">Guilherme Angnes - Analista de Dados</a>
-	<div class="nav-icons">
-		<a href="#sobre" data-tooltip="Sobre Mim"><i class="fa-solid fa-user-tie"></i></a>
-		<a href="#habilidades" data-tooltip="Habilidades"><i class="fa-solid fa-code"></i></a>
-		<a href="#projetos" data-tooltip="Projetos"><i class="fa-solid fa-folder-open"></i></a>
-	</div>
+    <a href="#home" class="logo">Guilherme Angnes - Analista de Dados</a>
+    <div class="nav-icons">
+        <a href="#sobre" data-tooltip="Sobre Mim"><i class="fa-solid fa-user-tie"></i></a>
+        <a href="#habilidades" data-tooltip="Habilidades"><i class="fa-solid fa-code"></i></a>
+        <a href="#projetos" data-tooltip="Projetos"><i class="fa-solid fa-folder-open"></i></a>
+    </div>
 </header>
-
 <section id="home">
-	<div class="banner-text">
-		<h1>Olá, bem-vindo ao meu portfólio de Análise de Dados</h1>
-		<p>Aqui você encontrará minhas experiências profissionais, habilidades, projetos e como entrar em contato comigo.</p>
-	</div>
-	<div class="banner-image">
-		<img src="images/img_prof.png" alt="Foto do Guilherme Angnes">
-	</div>
+    <div class="banner-text">
+        <h1>Olá, bem-vindo ao meu portfólio de Análise de Dados</h1>
+        <p>Aqui você encontrará minhas experiências profissionais, habilidades, projetos e como entrar em contato comigo.</p>
+    </div>
+    <div class="banner-image">
+        <img src="images/img_prof.png" alt="Foto do Guilherme Angnes">
+    </div>
 </section>
-
 <section id="sobre">
-	<h2>Sobre Mim</h2>
-	<p>Meu nome é Guilherme Jacó Angnes, sou formado em Análise e Desenvolvimento de Sistemas e atuo como Analista de Dados.</p>
-	<p>Atualmente trabalho em uma empresa de software odontológico, realizando extração, manipulação e criação de visões de dados para apoiar a tomada de decisão estratégica.</p>
+    <h2>Sobre Mim</h2>
+    <p>Meu nome é Guilherme Jacó Angnes, sou formado em Análise e Desenvolvimento de Sistemas e atuo como Analista de Dados.</p>
+    <p>Atualmente trabalho em uma empresa de software odontológico, realizando extração, manipulação e criação de visões de dados para apoiar a tomada de decisão estratégica.</p>
 </section>
-
 <section id="habilidades">
-	<h2>Habilidades</h2>
-	<div class="skills-grid">
-		<div class="skill-card">
-			<h3>Linguagens e Bancos de Dados</h3>
-			<ul>
-				<li>SQL (PostgreSQL, MySQL, SQL Server)</li>
-				<li>Python (Pandas, Scikit-learn)</li>
-				<li>Shell Script</li>
-				<li>SQLite</li>
-			</ul>
-		</div>
-		<div class="skill-card">
-			<h3>Visualização e BI</h3>
-			<ul>
-				<li>Power BI</li>
-				<li>Metabase</li>
-				<li>QuickSight</li>
-				<li>Google Sheets</li>
-			</ul>
-		</div>
-		<div class="skill-card">
-			<h3>Ferramentas e Tecnologias</h3>
-			<ul>
-				<li>Git & GitHub / GitLab</li>
-				<li>Ambientes Cloud (AWS)</li>
-				<li>Docker (Básico)</li>
-			</ul>
-		</div>
-		<div class="skill-card">
-			<h3>Conceitos e Métricas</h3>
-			<ul>
-				<li>Análise Estatística</li>
-				<li>Métricas de Negócio (KPIs)</li>
-				<li>Machine Learning (Conceitos)</li>
-				<li>ETL (Extração, Transformação, Carga)</li>
-			</ul>
-		</div>
-	</div>
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>Linguagens e Bancos de Dados</h3>
+            <ul>
+                <li>SQL (PostgreSQL, MySQL, SQL Server)</li>
+                <li>Python (Pandas, Scikit-learn)</li>
+                <li>Shell Script</li>
+                <li>SQLite</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <h3>Visualização e BI</h3>
+            <ul>
+                <li>Power BI</li>
+                <li>Metabase</li>
+                <li>QuickSight</li>
+                <li>Google Sheets</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <h3>Ferramentas e Tecnologias</h3>
+            <ul>
+                <li>Git & GitHub / GitLab</li>
+                <li>Ambientes Cloud (AWS)</li>
+                <li>Docker (Básico)</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <h3>Conceitos e Métricas</h3>
+            <ul>
+                <li>Análise Estatística</li>
+                <li>Métricas de Negócio (KPIs)</li>
+                <li>Machine Learning (Conceitos)</li>
+                <li>ETL (Extração, Transformação, Carga)</li>
+            </ul>
+        </div>
+    </div>
 </section>
-
 <!-- PROJETOS -->
 <section id="projetos">
-	<h2>Projetos</h2>
-	<div class="projects-grid">
-		<div class="project-card">
-			<img src="images/analise_compartiva.jpg" alt="Imagem do projeto de dashboard de vendas">
-			<div class="project-card-content">
-				<h3>Análise Comparativa de Leads</h3>
-				<p>Criação de um dashboard interativo no Power BI para realizar uma análise comparativa de entreda de Leads para identificar tendências e otimizar estratégias de marketing.</p>
-				<div class="project-tags">
-					<span>SQL</span>
-					<span>Power BI</span>
-					<span>ETL</span>
+    <h2>Projetos</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="images/analise_compartiva.jpg" alt="Imagem do projeto de dashboard de vendas">
+            <div class="project-card-content">
+                <h3>Análise Comparativa de Leads</h3>
+                <p>Criação de um dashboard interativo no Power BI para realizar uma análise comparativa de entreda de Leads para identificar tendências e otimizar estratégias de marketing.</p>
+                <div class="project-tags">
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                    <span>ETL</span>
           <span>Databricks</span>
-				</div>
-			</div>
-		</div>
-
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <div class="contact-footer">
-	<a href="mailto:guilhermeangnes13@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-	<a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-	<a href="https://www.instagram.com/gui_angnes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="mailto:guilhermeangnes13@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/guilherme-angnes-170aa51b1/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/gui_angnes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 </div>
-
 </body>
 </html>
